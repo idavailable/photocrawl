@@ -1,0 +1,38 @@
+{
+  "_说明": "这是模板。复制一份改成你的目标站点即可。所有字段都可省略，省略即用默认值。",
+
+  "name": "示例站点",
+  "type": "html",
+
+  "_注释_start_urls": "列表页入口。{page} 会自动按 page_start..page_end 展开；不写 {page} 就只抓这一个地址",
+  "start_urls": ["https://example.com/photos?page={page}"],
+  "page_start": 1,
+  "page_end": 3,
+
+  "_注释_list_item": "列表页里每个「图集」的链接。用 probe 子命令可以看到建议值",
+  "list_item": "div.card > a",
+  "list_title": ".title",
+
+  "_注释_next_page": "如果翻页是「下一页」按钮而不是 ?page=N，用这个；max_pages 限制最多翻几页",
+  "next_page": "a.next",
+  "max_pages": 5,
+
+  "_注释_detail": "详情页：标题选择器 + 图片选择器",
+  "detail_title": "h1.entry-title",
+  "detail_images": "div.gallery img, article img",
+
+  "_注释_image_attrs": "按顺序尝试这些属性取真实图片地址（懒加载站点很关键）",
+  "image_attrs": ["data-original", "data-src", "src"],
+
+  "_注释_gallery_next": "有些站一个图集分成多页（第1页/第2页…），填下一页选择器，程序会自动翻完",
+  "gallery_next": "",
+
+  "_注释_过滤": "min_bytes 丢弃小于该体积的图（多为缩略图）；exclude/include_only 按地址关键词过滤",
+  "min_bytes": 8192,
+  "max_images": 0,
+  "exclude": ["/thumbs/", "/icon/", "watermark"],
+  "include_only": [],
+
+  "_注释_referer": "下载图片时带的 Referer。留空则自动用详情页地址（多数防盗链站点需要）",
+  "referer": ""
+}

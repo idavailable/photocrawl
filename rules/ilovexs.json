@@ -1,0 +1,29 @@
+{
+  "name": "ilovexs / Nongmo.Zone",
+  "type": "html",
+  "start_urls": [
+    "https://ilovexs.com/page/{page}/",
+    "https://ilovexs.com/category/gravure/page/{page}/",
+    "https://ilovexs.com/category/japan/page/{page}/",
+    "https://ilovexs.com/category/chinese/page/{page}/",
+    "https://ilovexs.com/category/korea/page/{page}/"
+  ],
+  "page_start": 1,
+  "page_end": 4,
+  "list_item": "article.album-card",
+  "list_title": "",
+  "detail_images": "img.gallery-image",
+  "image_attrs": ["src", "data-src", "data-original"],
+  "include_only": [
+    "reiobox.top",
+    "karubox.top",
+    "nekobox.top",
+    "fujibox.top",
+    "quenbox.top",
+    "wakobox.top"
+  ],
+  "exclude": ["brand-logo", "album-card-image", "-icon"],
+  "min_bytes": 15360,
+  "referer": "https://ilovexs.com/",
+  "max_images": 80
+}

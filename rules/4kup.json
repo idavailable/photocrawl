@@ -1,0 +1,16 @@
+{
+  "name": "4kup Beautiful Girls Collection",
+  "type": "html",
+  "start_urls": [
+    "https://4kup.net/page/{page}/"
+  ],
+  "page_start": 1,
+  "page_end": 6,
+  "list_item": "h2.entry-title",
+  "list_title": "",
+  "detail_images": "a.thumb-photo",
+  "image_attrs": ["href"],
+  "include_only": ["blogger.googleusercontent.com", "ggpht.com"],
+  "min_bytes": 15360,
+  "max_images": 60
+}

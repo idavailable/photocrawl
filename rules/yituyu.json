@@ -1,0 +1,18 @@
+{
+  "name": "艺图语 yituyu",
+  "type": "html",
+  "start_urls": [
+    "https://www.yituyu.com/gallery/"
+  ],
+  "page_start": 1,
+  "page_end": 1,
+  "list_item": "a",
+  "list_url_regex": "/gallery/[0-9]+/$",
+  "list_title": "",
+  "detail_images": "div.gallerypic img",
+  "image_attrs": ["data-src", "src"],
+  "include_only": ["img.yituyu.com/pic/"],
+  "min_bytes": 20480,
+  "referer": "https://www.yituyu.com/",
+  "max_images": 20
+}

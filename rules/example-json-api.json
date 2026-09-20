@@ -1,0 +1,26 @@
+{
+  "_说明": "JSON 接口型站点的规则模板（很多图库站的列表/详情都是纯 JSON 接口）",
+  "name": "示例-接口站",
+  "type": "json",
+
+  "start_urls": ["https://api.example.com/photos?page={page}&size=50"],
+  "page_start": 1,
+  "page_end": 5,
+
+  "_注释_items_path": "从接口返回里取「条目数组」的路径，支持 a[*].b 这种写法",
+  "items_path": "data.list[*]",
+  "item_url_field": "detail_url",
+  "item_title_field": "title",
+
+  "_注释_images_path": "进入详情接口后，取图片数组的路径",
+  "images_path": "data.images[*]",
+  "image_field": "url",
+
+  "_注释_gallery_next": "详情接口若分页，给下一页字段名（本文档下用 data.next 取）",
+  "gallery_next": "data.next",
+
+  "min_bytes": 8192,
+  "max_images": 0,
+  "exclude": [],
+  "include_only": []
+}

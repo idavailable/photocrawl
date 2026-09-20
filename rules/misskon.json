@@ -1,0 +1,20 @@
+{
+  "name": "MissKon",
+  "type": "html",
+  "start_urls": [
+    "https://misskon.com/page/{page}/"
+  ],
+  "page_start": 1,
+  "page_end": 5,
+  "list_item": "h2.post-box-title",
+  "list_title": "",
+  "detail_images": "img.aligncenter.lazy",
+  "image_attrs": ["data-src", "src"],
+  "gallery_page_url": "{base}{page}/",
+  "gallery_pages": 20,
+  "gallery_stop_empty": true,
+  "include_only": ["pok.misskon.com/imghost", "misskon.com/imghost"],
+  "min_bytes": 15360,
+  "referer": "https://misskon.com/",
+  "max_images": 60
+}

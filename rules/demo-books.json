@@ -1,0 +1,15 @@
+{
+  "_说明": "冒烟测试用规则：books.toscrape.com 是官方提供的练习站点，允许抓取。用来验证引擎跑得通。",
+  "name": "demo-books",
+  "type": "html",
+  "start_urls": ["https://books.toscrape.com/catalogue/page-{page}.html"],
+  "page_start": 1,
+  "page_end": 2,
+  "list_item": "article.product_pod > h3 > a",
+  "list_title": "",
+  "detail_title": "h1",
+  "detail_images": "#product_gallery img",
+  "image_attrs": ["src"],
+  "min_bytes": 1024,
+  "exclude": ["/icon"]
+}

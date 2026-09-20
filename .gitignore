@@ -1,0 +1,30 @@
+# 下载产物不入库
+beauty1000/
+downloads/
+
+# Python
+__pycache__/
+*.pyc
+
+# 探测/调试的临时输出
+tools/logs/
+tools/listcheck*/
+tools/rulecheck*/
+tools/*_out.txt
+tools/*_result.json
+tools/dbg*.py
+tools/proxy_health.py
+tools/taotu_check.py
+beauty1000/
+downloads/
+__pycache__/
+*.pyc
+tools/logs/
+tools/listcheck*/
+tools/rulecheck*/
+tools/*_out.txt
+tools/*_result.json
+tools/*.txt
+tools/dbg*.py
+tools/proxy_health.py
+tools/taotu_check.py

@@ -1,0 +1,22 @@
+{
+  "name": "V2PH 微图坊",
+  "type": "html",
+  "start_urls": [
+    "https://www.v2ph.com/",
+    "https://www.v2ph.com/category/sexy-girls",
+    "https://www.v2ph.com/category/nvshen",
+    "https://www.v2ph.com/category/underwear-beauty",
+    "https://www.v2ph.com/category/glamour-models",
+    "https://www.v2ph.com/category/japanese-girls"
+  ],
+  "page_start": 1,
+  "page_end": 1,
+  "list_item": "a.media-cover",
+  "list_title": "",
+  "detail_images": "img.img-fluid.album-photo",
+  "image_attrs": ["src", "data-src"],
+  "include_only": ["cdn.v2ph.com/photos"],
+  "min_bytes": 30720,
+  "referer": "https://www.v2ph.com/",
+  "max_images": 40
+}

@@ -1,0 +1,19 @@
+{
+  "name": "taotu 套图",
+  "type": "html",
+  "start_urls": [
+    "https://taotu.org/"
+  ],
+  "page_start": 1,
+  "page_end": 1,
+  "list_item": "a",
+  "list_url_regex": "/(hot-girls|cosplay)/[^/]+/[0-9]{3,}-[^/]+/$",
+  "list_title": "",
+  "detail_images": "a",
+  "image_attrs": ["href"],
+  "include_only": ["res.taotu.org/hot-girls/", "res.taotu.org/cosplay/"],
+  "exclude": ["/thumbnail/", "/adimages/", "/images/"],
+  "min_bytes": 20480,
+  "referer": "https://taotu.org/",
+  "max_images": 120
+}
